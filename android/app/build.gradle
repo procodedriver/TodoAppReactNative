@@ -132,7 +132,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.todoreactnative"
+        applicationId "com.todoappreactnative"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

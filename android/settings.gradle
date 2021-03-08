@@ -1,4 +1,4 @@
-rootProject.name = 'TodoReactNative'
+rootProject.name = 'TodoAppReactNative'
 
 apply from: '../node_modules/react-native-unimodules/gradle.groovy'
 includeUnimodulesProjects()

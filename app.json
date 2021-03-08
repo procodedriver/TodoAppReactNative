@@ -1,9 +1,9 @@
 {
-  "name": "TodoReactNative",
-  "displayName": "TodoReactNative",
+  "name": "TodoAppReactNative",
+  "displayName": "TodoAppReactNative",
   "expo": {
-    "name": "TodoReactNative",
-    "slug": "TodoReactNative",
+    "name": "TodoAppReactNative",
+    "slug": "TodoAppReactNative",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
