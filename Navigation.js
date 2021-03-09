@@ -1,6 +1,9 @@
 import React from 'react';
 import TabNavigation from './TabNavigation';
 import { Font, AppLoading } from "expo";
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import reducers from './Reducers.js'
 
 export default class Navigation extends React.Component {
     
@@ -20,13 +23,16 @@ export default class Navigation extends React.Component {
   }
 
   render() {
+    const store = createStore(reducers);
     if (this.state.fontLoading) {
         return (            
           <AppLoading />        
         );
       }else{
         return (
-            <TabNavigation />          
+          <Provider store = { store }>
+            <TabNavigation />
+          </Provider>          
         );
       }
   }
