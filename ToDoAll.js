@@ -44,7 +44,7 @@ class ToDoAll extends React.Component {
     render() {
 
         const { new_todo } = this.state;
-        const { todos, show_new_todo, name, deleteTodo, updateTodo } = this.props;
+        const { todos, show_new_todo, screen, deleteToDo, updateToDo } = this.props;
 
         let listItem = [];
         if(todos.length > 0) {
@@ -63,7 +63,7 @@ class ToDoAll extends React.Component {
             <Container>
                 <Header>
                     <Body>
-                        <Title>{ name }</Title>
+                        <Title>{ screen }</Title>
                     </Body>
                 </Header>
                 <Content>

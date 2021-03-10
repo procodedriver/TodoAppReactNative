@@ -9,7 +9,7 @@ import ToDoAll from './ToDoAll';
 class AllToDo extends React.Component {   
   render() {    
     return (
-      <ToDoAll show_new_todo = { true } name = "All" />
+      <ToDoAll show_new_todo = { true } screen = "All" />
     );
   }
 }
@@ -17,7 +17,7 @@ class AllToDo extends React.Component {
 class ActiveToDo extends React.Component {
   render() {
     return (
-      <ToDoAll show_new_todo = { false } name = "Active" />
+      <ToDoAll show_new_todo = { false } screen = "Active" />
     );
   }
 }
@@ -25,7 +25,7 @@ class ActiveToDo extends React.Component {
 class CompletedToDo extends React.Component {
   render() {
     return (
-      <ToDoAll show_new_todo = { false } name = "Completed" />
+      <ToDoAll show_new_todo = { false } screen = "Completed" />
     );
   }
 }

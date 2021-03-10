@@ -12,7 +12,10 @@ export default function ToDoReducer(state = initialState, action) {
             return {
                 todos: [
                     ...state.todos,
-                    action.todo
+                    {
+                        ...action.todo,
+                        completed: action.todo.completed
+                    }
                 ]
             };
 
